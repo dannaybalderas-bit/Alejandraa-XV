@@ -198,3 +198,72 @@ input:focus,select:focus,textarea:focus{border-color:var(--champagne2);box-shado
   .dress .body-copy{font-size:clamp(1.72rem, 8.2vw, 2.8rem);}
   .countdown{grid-template-columns:repeat(2,1fr);}
 }
+
+
+/* Ajuste final Dalia: títulos menos grandes y preguntas más legibles */
+.section-label{
+  font-size:clamp(2rem, 6.2vw, 4.35rem) !important;
+  line-height:1.02 !important;
+  letter-spacing:.075em !important;
+  margin-bottom:24px !important;
+}
+.countdown-section .section-label,
+.itinerary .section-label,
+.dress .section-label,
+.gift .section-label,
+.playlist .section-label,
+.photos .section-label,
+.rsvp .section-label,
+.location .section-label{
+  font-size:clamp(2.18rem, 6.8vw, 4.75rem) !important;
+}
+.event-details{
+  font-size:clamp(1.35rem, 4.2vw, 2.25rem) !important;
+}
+.event-details strong{
+  font-size:clamp(1.65rem, 5vw, 2.75rem) !important;
+}
+.rsvp h2,
+.playlist h2,
+.location h2{
+  font-size:clamp(1.65rem, 5.4vw, 2.8rem) !important;
+  line-height:1.12 !important;
+}
+label{
+  font-size:clamp(.92rem, 2.5vw, 1.05rem) !important;
+  letter-spacing:.11em !important;
+}
+input, select, textarea{
+  font-size:1rem !important;
+  line-height:1.35 !important;
+}
+input::placeholder, textarea::placeholder{
+  font-size:.98rem !important;
+  color:rgba(248,244,234,.55) !important;
+}
+form button, .outline-btn, .enter-btn{
+  font-size:.78rem !important;
+}
+@media (max-width:520px){
+  .section-label,
+  .countdown-section .section-label,
+  .itinerary .section-label,
+  .dress .section-label,
+  .gift .section-label,
+  .playlist .section-label,
+  .photos .section-label,
+  .rsvp .section-label,
+  .location .section-label{
+    font-size:clamp(1.82rem, 10.5vw, 3.25rem) !important;
+    letter-spacing:.045em !important;
+  }
+  .rsvp h2,
+  .playlist h2,
+  .location h2{
+    font-size:clamp(1.45rem, 7vw, 2.2rem) !important;
+  }
+  label{
+    font-size:.94rem !important;
+    letter-spacing:.08em !important;
+  }
+}
