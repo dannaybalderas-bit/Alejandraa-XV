@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alejandra | Mis XV</title>
+  <meta name="description" content="Invitación a los XV de Alejandra" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Bodoni+Moda:opsz,wght@6..96,400;6..96,600&family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <audio id="music" src="assets/music/carino.mp3" preload="auto" loop></audio>
+
+  <div class="sparkles" aria-hidden="true"></div>
+
+  <header class="hero" id="inicio">
+    <div class="hero-photo" aria-hidden="true"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="eyebrow">Celebrando</p>
+      <h1>Alejandra</h1>
+      <div class="xv-mark">XV</div>
+      <p class="hero-date">24 de Julio de 2026</p>
+      <button class="enter-btn" id="enterBtn" type="button">Entrar</button>
+      <p class="music-hint">Toca para comenzar la experiencia con música</p>
+    </div>
+  </header>
+
+  <main id="contenido" class="content">
+    <section class="section intro-section reveal">
+      <div class="photo-card tall">
+        <img src="assets/img/alejandra-1.png" alt="Alejandra">
+      </div>
+    </section>
+
+    <section class="section invitation reveal" id="invitacion">
+      <div class="ornament">✦</div>
+      <p class="small-title">Con la bendición de Dios</p>
+      <p class="body-copy">y en compañía de mis padres</p>
+      <h2>Dalia Molano</h2>
+      <span class="amp">e</span>
+      <h2>Iván Villarreal</h2>
+      <p class="body-copy wide">Tengo el honor de invitarte a celebrar conmigo este día tan especial.</p>
+      <div class="event-details">
+        <p><strong>24 de Julio de 2026</strong></p>
+        <p>7:30 PM</p>
+        <p>Exclusive Sky</p>
+      </div>
+    </section>
+
+    <section class="section countdown-section reveal" id="contador">
+      <p class="section-label">Faltan</p>
+      <div class="countdown" id="countdown">
+        <div><span id="days">00</span><small>Días</small></div>
+        <div><span id="hours">00</span><small>Horas</small></div>
+        <div><span id="minutes">00</span><small>Min</small></div>
+        <div><span id="seconds">00</span><small>Seg</small></div>
+      </div>
+    </section>
+
+    <section class="section itinerary reveal" id="itinerario">
+      <p class="section-label">Itinerario</p>
+      <div class="timeline">
+        <div class="timeline-item"><span>7:30 PM</span><strong>Recepción</strong></div>
+        <div class="timeline-item"><span>9:00 PM</span><strong>Cena</strong></div>
+        <div class="timeline-item"><span>10:00 PM</span><strong>Baile</strong></div>
+        <div class="timeline-item"><span>12:00 AM</span><strong>Fin</strong></div>
+      </div>
+    </section>
+
+    <section class="section dress reveal" id="vestimenta">
+      <p class="section-label">Código de vestimenta</p>
+      <h2>Formal</h2>
+      <div class="dress-icons" aria-hidden="true">
+        <svg viewBox="0 0 120 160" role="img"><path d="M58 14c-10 7-15 23-17 40L20 138c-1 5 3 9 8 9h64c5 0 9-4 8-9L79 54c-2-17-7-33-17-40l-2 22h-2L58 14z"/><path d="M42 54h36"/><path d="M39 76h42"/></svg>
+        <svg viewBox="0 0 120 160" role="img"><path d="M44 18h32l7 34-12 12 12 83H37l12-83-12-12 7-34z"/><path d="M52 18l8 24 8-24"/><path d="M60 42v105"/><path d="M35 54l-17 28"/><path d="M85 54l17 28"/></svg>
+      </div>
+      <p class="body-copy wide">Se reserva el color negro y champagne para la quinceañera.</p>
+    </section>
+
+    <section class="section gift reveal" id="regalo">
+      <p class="section-label">Sugerencia de regalo</p>
+      <div class="envelope" aria-hidden="true">
+        <div class="flap"></div>
+        <div class="pocket"></div>
+      </div>
+      <p class="body-copy wide">Mi mejor regalo es compartir contigo este gran día, si deseas obsequiarme algo puede ser lluvia de sobres.</p>
+    </section>
+
+    <section class="section playlist reveal" id="playlist">
+      <p class="section-label">Playlist</p>
+      <h2>¿Qué canción no puede faltar en mis XV?</h2>
+      <form class="mini-form" id="songForm">
+        <input type="text" id="songInput" placeholder="Escribe aquí tu canción" required>
+        <button type="submit">Enviar por WhatsApp</button>
+      </form>
+    </section>
+
+    <section class="section photos reveal" id="album">
+      <p class="section-label">Álbum de fotos Drive</p>
+      <div class="photo-card wide-card">
+        <img src="assets/img/alejandra-2.jpg" alt="Alejandra">
+      </div>
+      <p class="body-copy wide">Comparte tus fotos en este link.</p>
+      <a class="outline-btn" href="https://drive.google.com/drive/folders/1eu53rZ0sMYERgPPQz-JWZGnCcP1EX_XO?usp=share_link" target="_blank" rel="noopener">Compartir fotos</a>
+    </section>
+
+    <section class="section rsvp reveal" id="confirmacion">
+      <p class="section-label">Confirmación</p>
+      <h2>Para que este evento sea aún más perfecto ayúdanos dando tu respuesta antes del 9 de Julio.</h2>
+      <form class="rsvp-form" id="rsvpForm">
+        <label>¿Asistirá?
+          <select id="attendance" required>
+            <option value="">Selecciona una opción</option>
+            <option>Sí asistiré</option>
+            <option>No podré asistir</option>
+          </select>
+        </label>
+        <label>Escriba su nombre
+          <input type="text" id="guestName" required>
+        </label>
+        <label>Deja un mensaje o un comentario para Alejandra
+          <textarea id="message" rows="4"></textarea>
+        </label>
+        <label>¿Qué canción no puede faltar en mi fiesta?
+          <input type="text" id="rsvpSong">
+        </label>
+        <button type="submit">Enviar confirmación</button>
+      </form>
+    </section>
+
+    <section class="section location reveal" id="ubicacion">
+      <p class="section-label">Ubicación</p>
+      <div class="venue-card">
+        <img src="assets/img/lugar-evento.png" alt="Lugar del evento">
+        <div>
+          <h2>Exclusive Sky</h2>
+          <p>Te esperamos para celebrar una noche inolvidable.</p>
+          <a class="outline-btn" href="https://maps.app.goo.gl/x3DmYBuRQ6vodeej7" target="_blank" rel="noopener">Cómo llegar</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer reveal">
+      <p>Gracias por formar parte de este sueño.</p>
+      <strong>Alejandra</strong>
+    </footer>
+  </main>
+
+  <button class="music-toggle" id="musicToggle" type="button" aria-label="Reproducir o pausar música">♪</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
