@@ -267,3 +267,179 @@ form button, .outline-btn, .enter-btn{
     letter-spacing:.08em !important;
   }
 }
+
+/* V6 FINAL Dalia: proporciones elegantes y legibles */
+:root{
+  --title-size: clamp(1.95rem, 7.4vw, 3.45rem);
+  --title-size-long: clamp(1.72rem, 6.4vw, 3.05rem);
+}
+
+.section{
+  padding-top: 76px !important;
+  padding-bottom: 76px !important;
+}
+
+.section-label,
+.countdown-section .section-label,
+.itinerary .section-label,
+.dress .section-label,
+.gift .section-label,
+.playlist .section-label,
+.photos .section-label,
+.rsvp .section-label,
+.location .section-label{
+  font-family: 'Cormorant Garamond', serif !important;
+  font-size: var(--title-size) !important;
+  line-height: 1.04 !important;
+  letter-spacing: .045em !important;
+  font-weight: 600 !important;
+  color: var(--champagne2) !important;
+  text-transform: none !important;
+  margin-bottom: 22px !important;
+  text-shadow: 0 0 18px rgba(217,199,163,.18) !important;
+}
+
+.dress .section-label,
+.gift .section-label,
+.photos .section-label{
+  font-size: var(--title-size-long) !important;
+  max-width: 760px;
+}
+
+.section-label::after{
+  content:"";
+  display:block;
+  width:72px;
+  height:1px;
+  margin:14px auto 0;
+  background:linear-gradient(90deg, transparent, var(--champagne), transparent);
+  opacity:.85;
+}
+
+.event-details{
+  font-size: clamp(1.18rem, 4vw, 1.95rem) !important;
+  padding: 22px 26px !important;
+}
+.event-details strong{
+  font-size: clamp(1.45rem, 4.8vw, 2.35rem) !important;
+}
+
+.countdown span{
+  font-size: clamp(2.05rem, 10vw, 4.25rem) !important;
+}
+.countdown small{
+  font-size: .72rem !important;
+  letter-spacing:.18em !important;
+}
+
+.timeline-item strong{
+  font-size: clamp(1.65rem, 5.4vw, 2.45rem) !important;
+}
+.timeline-item span{
+  font-size:.88rem !important;
+}
+
+.dress h2,
+.playlist h2,
+.rsvp h2,
+.location h2{
+  font-size: clamp(1.65rem, 5.2vw, 2.65rem) !important;
+  line-height:1.15 !important;
+}
+
+.dress .body-copy{
+  font-size: clamp(1.42rem, 5.5vw, 2.35rem) !important;
+  line-height:1.2 !important;
+  max-width:720px !important;
+}
+
+.gift .body-copy,
+.photos .body-copy,
+.venue-card p,
+.body-copy{
+  font-size: clamp(1rem, 3.2vw, 1.28rem) !important;
+  line-height:1.75 !important;
+}
+
+label{
+  font-size: clamp(.98rem, 3.1vw, 1.12rem) !important;
+  letter-spacing:.065em !important;
+  color: var(--champagne2) !important;
+  text-transform:none !important;
+  font-family:'Montserrat', sans-serif !important;
+  font-weight:500 !important;
+}
+
+input, select, textarea{
+  font-size: 1.04rem !important;
+  padding: 17px 18px !important;
+}
+
+input::placeholder, textarea::placeholder{
+  font-size: 1rem !important;
+}
+
+form button,
+.outline-btn,
+.enter-btn{
+  font-size:.82rem !important;
+  letter-spacing:.13em !important;
+  padding:14px 28px !important;
+}
+
+.envelope-image{
+  width:min(56vw, 240px) !important;
+}
+
+.dress-image{
+  width:min(86vw, 530px) !important;
+}
+
+.footer p{
+  font-size:clamp(1.5rem, 5vw, 2.15rem) !important;
+}
+.footer strong{
+  font-size:clamp(3.6rem, 15vw, 5.8rem) !important;
+}
+
+@media (max-width:520px){
+  .section{
+    padding-top:68px !important;
+    padding-bottom:68px !important;
+  }
+  .section-label,
+  .countdown-section .section-label,
+  .itinerary .section-label,
+  .dress .section-label,
+  .gift .section-label,
+  .playlist .section-label,
+  .photos .section-label,
+  .rsvp .section-label,
+  .location .section-label{
+    font-size: clamp(1.72rem, 9.2vw, 2.62rem) !important;
+    letter-spacing:.035em !important;
+    margin-bottom:18px !important;
+  }
+  .dress .section-label,
+  .gift .section-label,
+  .photos .section-label{
+    font-size: clamp(1.55rem, 8.1vw, 2.35rem) !important;
+  }
+  .section-label::after{
+    width:58px;
+    margin-top:12px;
+  }
+  .rsvp h2,
+  .playlist h2,
+  .location h2,
+  .dress h2{
+    font-size: clamp(1.35rem, 6vw, 1.9rem) !important;
+  }
+  label{
+    font-size:1rem !important;
+    letter-spacing:.045em !important;
+  }
+  input, select, textarea{
+    font-size:1.02rem !important;
+  }
+}
