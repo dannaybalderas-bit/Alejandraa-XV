@@ -53,3 +53,24 @@ form{width:min(90vw,560px);display:grid;gap:16px;margin-top:24px}input,select,te
 .footer{min-height:50svh}.footer p{font-family:'Cormorant Garamond';font-size:1.7rem;color:var(--champagne2)}.footer strong{font-family:'Allura';font-size:4rem;color:var(--champagne)}
 .music-toggle{position:fixed;right:18px;bottom:18px;z-index:10;width:54px;height:54px;border-radius:50%;border:1px solid var(--champagne);background:rgba(9,9,11,.72);backdrop-filter:blur(12px);color:var(--champagne);font-size:1.4rem;box-shadow:0 0 24px rgba(217,199,163,.20)}.music-toggle.playing{background:var(--champagne);color:#111}
 @media (min-width:800px){.venue-card{display:grid;grid-template-columns:1.1fr .9fr;align-items:center}.venue-card img{height:100%;max-height:none}.mini-form{grid-template-columns:1fr auto}.section{padding:105px 40px}}
+
+/* Ajustes V4.1 solicitados */
+.hero-content{padding-top:42px;}
+.dress-icons-elegant{gap:46px;margin:26px 0 14px;align-items:flex-end;justify-content:center;flex-wrap:wrap;}
+.dress-icons-elegant svg{width:145px;height:185px;stroke:var(--champagne2);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 0 22px rgba(217,199,163,.25));opacity:.96;}
+.reserved-note{max-width:760px;margin:18px auto 0;font-family:'Cormorant Garamond',serif;font-size:clamp(1.75rem,6vw,3.2rem);line-height:1.18;color:var(--champagne2);text-align:center;text-shadow:0 0 18px rgba(217,199,163,.18);}
+.gift .envelope{width:230px;height:150px;margin-top:30px;}
+.gift .flap{display:none;}
+.gift .pocket{inset:0;border:2px solid var(--champagne);border-radius:12px;background:linear-gradient(145deg,rgba(217,199,163,.18),rgba(255,255,255,.025));}
+.gift .pocket::before,.gift .pocket::after{border-top:2px solid var(--champagne);height:100%;}
+.gift .pocket::before{clip-path:polygon(0 0,100% 50%,0 100%);}
+.gift .pocket::after{clip-path:polygon(100% 0,0 50%,100% 100%);}
+.gift .envelope::before{content:"";position:absolute;left:0;right:0;top:0;height:100%;border-bottom:2px solid var(--champagne);clip-path:polygon(0 0,50% 56%,100% 0,100% 100%,0 100%);opacity:.95;}
+.footer{align-items:center;justify-content:center;text-align:center;padding-inline:24px;}
+.footer p{margin:0 auto 22px;max-width:860px;text-align:center;}
+.footer strong{display:block;text-align:center;margin:0 auto;line-height:1;}
+@media (max-width:520px){
+  .dress-icons-elegant{gap:20px;}
+  .dress-icons-elegant svg{width:120px;height:155px;}
+  .reserved-note{font-size:2rem;padding:0 8px;}
+}

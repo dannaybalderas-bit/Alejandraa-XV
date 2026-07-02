@@ -55,7 +55,6 @@ document.getElementById('rsvpForm').addEventListener('submit',(e)=>{
   const attendance = document.getElementById('attendance').value;
   const name = document.getElementById('guestName').value.trim();
   const message = document.getElementById('message').value.trim();
-  const song = document.getElementById('rsvpSong').value.trim();
-  const text = `Confirmación XV Alejandra%0A%0A¿Asistirá?: ${attendance}%0ANombre: ${name}%0AMensaje para Alejandra: ${message || 'Sin mensaje'}%0ACanción que no puede faltar: ${song || 'Sin canción'}`;
+  const text = `Confirmación XV Alejandra%0A%0A¿Asistirá?: ${attendance}%0ANombre: ${name}%0AMensaje para Alejandra: ${message || 'Sin mensaje'}`;
   window.open(`https://wa.me/${phone}?text=${text}`,'_blank');
 });
